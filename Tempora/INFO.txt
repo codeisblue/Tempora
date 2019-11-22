@@ -1,0 +1,15 @@
+﻿Entity: A base class that every entity should inherit frome
+Map: A class that handles loaded and storing of map data.
+World: A container that contains a bunch of entities, maps, physics words etc. Anything that needs to be contained into a single world\
+GameState: A container for everything in the game
+
+                -> GameState
+       -> World ^ 
+Map    ^
+Entity ^
+
+
+Create a world
+Populate it with entities and such
+Start simulation of world
+Puase at any time, and load or run two worlds simultanious 

@@ -1,0 +1,15 @@
+C:\Users\CODEBLUE\Documents\Tempora\Tempora\bin\Release\netcoreapp2.0\Content\maps\test.xnb
+C:\Users\CODEBLUE\Documents\Tempora\Tempora\bin\Release\netcoreapp2.0\Content\ball.xnb
+C:\Users\CODEBLUE\Documents\Tempora\Tempora\bin\Release\netcoreapp2.0\Content\ball2.xnb
+C:\Users\CODEBLUE\Documents\Tempora\Tempora\bin\Release\netcoreapp2.0\Content\cross.xnb
+C:\Users\CODEBLUE\Documents\Tempora\Tempora\bin\Release\netcoreapp2.0\Content\dino.xnb
+C:\Users\CODEBLUE\Documents\Tempora\Tempora\bin\Release\netcoreapp2.0\Tempora.deps.json
+C:\Users\CODEBLUE\Documents\Tempora\Tempora\bin\Release\netcoreapp2.0\Tempora.dll
+C:\Users\CODEBLUE\Documents\Tempora\Tempora\bin\Release\netcoreapp2.0\Tempora.pdb
+C:\Users\CODEBLUE\Documents\Tempora\Tempora\obj\Release\netcoreapp2.0\Tempora.csproj.CoreCompileInputs.cache
+C:\Users\CODEBLUE\Documents\Tempora\Tempora\obj\Release\netcoreapp2.0\Tempora.AssemblyInfoInputs.cache
+C:\Users\CODEBLUE\Documents\Tempora\Tempora\obj\Release\netcoreapp2.0\Tempora.AssemblyInfo.cs
+C:\Users\CODEBLUE\Documents\Tempora\Tempora\obj\Release\netcoreapp2.0\Tempora.dll
+C:\Users\CODEBLUE\Documents\Tempora\Tempora\obj\Release\netcoreapp2.0\Tempora.pdb
+C:\Users\CODEBLUE\Documents\Tempora\Tempora\obj\Release\netcoreapp2.0\Tempora.csprojAssemblyReference.cache
+C:\Users\CODEBLUE\Documents\Tempora\Tempora\bin\Release\netcoreapp2.0\Content\maps\test.map
