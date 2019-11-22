@@ -94,5 +94,17 @@ namespace Tempora.Engine
         {
             EntityManager.DrawEntities(spriteBatch, gameTime, this);
         }
+
+        /// <summary>
+        /// Draws all the ui for entities in this world
+        /// </summary>
+        /// <param name="spriteBatch">spritebatch reference</param>
+        /// <param name="gameTime">game time</param>
+        /// <param name="ScrW"></param>
+        /// <param name="ScrH"></param>
+        public void DrawUI(SpriteBatch spriteBatch, GameTime gameTime, int ScrW, int ScrH)
+        {
+            EntityManager.DrawUIEntities(spriteBatch, gameTime, ScrW, ScrH, this);
+        }
     }
 }

@@ -47,5 +47,23 @@ namespace Tempora.Engine
                 }
             }
         }
+
+        /// <summary>
+        /// Renders all the ui in active worlds
+        /// </summary>
+        /// <param name="spriteBatch">spritebatch reference</param>
+        /// <param name="gameTime">game time</param>
+        /// <param name="ScrW"></param>
+        /// <param name="ScrH"></param>
+        public static void DrawWorldsUI(SpriteBatch spriteBatch, GameTime gameTime, int ScrW, int ScrH)
+        {
+            foreach (World w in WorldInstances)
+            {
+                if (w.IsActive)
+                {
+                    w.DrawUI(spriteBatch, gameTime, ScrW, ScrH);
+                }
+            }
+        }
     }
 }

@@ -178,6 +178,29 @@ namespace Tempora.Engine
             }
         }
 
+        public static void DrawUIEntities(SpriteBatch spriteBatch, GameTime gameTime, int ScrW, int ScrH, World world = null)
+        {
+            if (world != null)
+            {
+                foreach (Entity e in Entities[world])
+                {
+                    if (e != null)
+                        e.DrawUI(world, spriteBatch, gameTime, ScrW, ScrH);
+                }
+            }
+            else
+            {
+                foreach (KeyValuePair<World, List<Entity>> arr in Entities)
+                {
+                    foreach (Entity e in arr.Value)
+                    {
+                        if (e != null)
+                            e.DrawUI(arr.Key, spriteBatch, gameTime, ScrW, ScrH);
+                    }
+                }
+            }
+        }
+
         /// <summary>
         /// This functions will loop over all classes that are based on Entity and call the static Load() function on them
         /// </summary>

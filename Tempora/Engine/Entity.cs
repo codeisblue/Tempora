@@ -112,6 +112,14 @@ namespace Tempora.Engine
             }
         }
 
+        public virtual void DrawUI(World world, SpriteBatch spriteBatch, GameTime gameTime, int ScrW, int ScrH)
+        {
+            foreach (Component c in components)
+            {
+                c.DrawUI(world, spriteBatch, gameTime, ScrW, ScrH);
+            }
+        }
+
         /// <summary>
         /// Called just before the entity is destroyed
         /// </summary>

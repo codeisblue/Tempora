@@ -54,6 +54,19 @@ namespace Tempora.Engine
         }
 
         /// <summary>
+        /// Called when ever the component should draw UI (each frame)
+        /// </summary>
+        /// <param name="world">The world we are drawing in</param>
+        /// <param name="spriteBatch">Sprite batch reference</param>
+        /// <param name="gameTime">Game Time</param>
+        /// <param name="ScrW">Screen width</param>
+        /// <param name="ScrH">Screen height</param>
+        public virtual void DrawUI(World world, SpriteBatch spriteBatch, GameTime gameTime, int ScrW, int ScrH)
+        {
+
+        }
+
+        /// <summary>
         /// Called when ever a component should be destroyed
         /// </summary>
         /// <param name="world">Game Time</param>

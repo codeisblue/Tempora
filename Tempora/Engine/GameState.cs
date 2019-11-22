@@ -45,5 +45,18 @@ namespace Tempora.Engine
         {
 
         }
+
+        /// <summary>
+        /// Called each frame after the draw even.
+        /// When drawing during this time, the camera matrix is reset
+        /// </summary>
+        /// <param name="spriteBatch">Spritebatch reference</param>
+        /// <param name="gameTime">Game Time</param>
+        /// <param name="ScrW">The width of the window in pixels</param>
+        /// <param name="ScrH">The height of the window in pixels</param>
+        public virtual void DrawUI(SpriteBatch spriteBatch, GameTime gameTime, int ScrW, int ScrH)
+        {
+
+        }
     }
 }

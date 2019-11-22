@@ -130,6 +130,9 @@ namespace Tempora.Engine
             //Draw the game state
             State.Draw(spriteBatch, gameTime);
 
+            //Draw the UI layer
+            State.DrawUI(spriteBatch, gameTime, graphics.PreferredBackBufferWidth, graphics.PreferredBackBufferHeight);
+
             //Draw monogame
             base.Draw(gameTime);
         }

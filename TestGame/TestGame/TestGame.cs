@@ -15,6 +15,9 @@ namespace TestGame
         public static Map TestMap;
         public static World TestWorld;
 
+        //Render state
+        private RasterizerState rs = new RasterizerState { MultiSampleAntiAlias = true };
+
         public override void Initialize()
         {
            
@@ -33,7 +36,7 @@ namespace TestGame
 
              for (int i = 0; i < 30; i++)
              {
-                for (int x = 0; x < 15; x++)
+                for (int x = 0; x < 8; x++)
                 {
                     //Create an entity
                     ETestEntity e = EntityManager.CreateEntity<ETestEntity>(TestWorld);
@@ -81,7 +84,7 @@ namespace TestGame
 
         public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
         {
-            RasterizerState rs = new RasterizerState { MultiSampleAntiAlias = true };
+            
             spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.PointClamp, DepthStencilState.Default, rs, null, CameraManager.GetActiveMatrix());
 
             //Draw background and collision of active map
@@ -94,6 +97,21 @@ namespace TestGame
             //Draw rest of layers that are on top
             TestMap.RenderLayer(spriteBatch, MapLayer.Lights);
             TestMap.RenderLayer(spriteBatch, MapLayer.Entities);
+
+            spriteBatch.End();
+
+        }
+
+        public override void DrawUI(SpriteBatch spriteBatch, GameTime gameTime, int ScrW, int ScrH)
+        {
+            base.DrawUI(spriteBatch, gameTime, ScrW, ScrH);
+
+            //Draw the UI layer
+            spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.PointClamp, DepthStencilState.Default, rs);
+
+            WorldManager.DrawWorldsUI(spriteBatch, gameTime, GameManager.GraphicsDeviceInstance.Viewport.Width, GameManager.GraphicsDeviceInstance.Viewport.Height);
+
+            spriteBatch.Draw(GameManager.WHITE_SOLID, new Rectangle(10, 10, 500, 100), Color.Green);
 
             spriteBatch.End();
         }

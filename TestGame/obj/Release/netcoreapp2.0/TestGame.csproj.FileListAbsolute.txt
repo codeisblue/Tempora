@@ -17,4 +17,3 @@ C:\Users\CODEBLUE\Documents\Tempora\TestGame\obj\Release\netcoreapp2.0\TestGame.
 C:\Users\CODEBLUE\Documents\Tempora\TestGame\obj\Release\netcoreapp2.0\TestGame.csproj.CopyComplete
 C:\Users\CODEBLUE\Documents\Tempora\TestGame\obj\Release\netcoreapp2.0\TestGame.dll
 C:\Users\CODEBLUE\Documents\Tempora\TestGame\obj\Release\netcoreapp2.0\TestGame.pdb
-C:\Users\CODEBLUE\Documents\Tempora\TestGame\bin\Release\netcoreapp2.0\Content\maps\test.map
