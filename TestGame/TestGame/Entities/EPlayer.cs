@@ -86,7 +86,7 @@ namespace TestGame
 
         }
 
-        float camZoom = 5;
+        float camZoom = 0;
         string runType = "run_sideways";
         public override void Tick(World world, GameTime gameTime)
         {
@@ -101,7 +101,7 @@ namespace TestGame
             inputController.TickInput(gameTime);
 
 
-            float zoomLerpSpeed = 0.5f;
+            float zoomLerpSpeed = 0.1f;
 
             
 
@@ -162,9 +162,9 @@ namespace TestGame
 
             ChipmunkSharp.cpVect vel = PhysicalBody.Body.GetVelocity();
 
-            float zoom = MathHelper.Lerp(5f, 7.2f, (float)Math.Clamp(((vel.x * vel.x) + (vel.y * vel.y)) / Speed, 0, 1.0f));
+            float zoom = MathHelper.Lerp(0.2f, 1f, (float)Math.Clamp(((vel.x * vel.x) + (vel.y * vel.y)) / Speed, 0, 1.0f));
             camZoom = MathHelper.Lerp(camZoom, zoom, zoomLerpSpeed * ((float)gameTime.ElapsedGameTime.TotalMilliseconds / 1000.0f));
-            PlayerCamera.transform.Scale = new Vector2(camZoom, camZoom);
+            PlayerCamera.transform.Scale = new Vector2(camZoom * 1000, camZoom * 1000);
 
         }
 

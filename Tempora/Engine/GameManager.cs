@@ -39,22 +39,23 @@ namespace Tempora.Engine
         public static Texture2D WHITE_SOLID;
 
         /// <summary>
+        /// Stores a reference to the singleton
+        /// </summary>
+        private static GameManager instance;
+
+        /// <summary>
         /// Initializes our game
         /// </summary>
         /// <param name="state">The state to intialize the game with</param>
         public GameManager(GameState state)
         {
+            instance = this;
+
             //Set our state
             State = state;
 
             //Store refence to graphics device
             graphics = new GraphicsDeviceManager(this);
-
-            //Configure window
-            Window.AllowUserResizing = true;
-            graphics.PreferredBackBufferWidth = 1920;
-            graphics.PreferredBackBufferHeight = 1080;
-            //graphics.IsFullScreen = true;
             graphics.ApplyChanges();
 
             //Set up solid texture
@@ -64,6 +65,23 @@ namespace Tempora.Engine
             //Set out root direct and other stuff
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
+        }
+
+        /// <summary>
+        /// Changes the window to the new settings
+        /// </summary>
+        /// <param name="width">The width of the window (overridden in fullscreen)</param>
+        /// <param name="height">The height of the window (overridden in fullscreen)</param>
+        /// <param name="fullscreen">Fullscreen</param>
+        /// <param name="resizable">Resizable</param>
+        public static void SetScreenSettings(int width, int height, bool fullscreen, bool resizable)
+        {
+            //Configure window
+            instance.Window.AllowUserResizing = resizable;
+            instance.graphics.PreferredBackBufferWidth = width;
+            instance.graphics.PreferredBackBufferHeight = height;
+            instance.graphics.IsFullScreen = fullscreen;
+            instance.graphics.ApplyChanges();
         }
 
         /// <summary>

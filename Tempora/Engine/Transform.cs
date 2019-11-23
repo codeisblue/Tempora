@@ -8,7 +8,7 @@ namespace Tempora.Engine
 {
     /// <summary>
     /// Represents a location, rotation and scale in 2D space
-    /// Transforms can also be controlled from by a physics body or through parenting
+    /// Transforms can also be controlled by a physics body or through parenting
     /// </summary>
     public class Transform
     {

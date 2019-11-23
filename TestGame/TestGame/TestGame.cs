@@ -20,7 +20,7 @@ namespace TestGame
 
         public override void Initialize()
         {
-           
+            GameManager.SetScreenSettings(1920, 1080, true, true);
         }
 
         public override void Load()

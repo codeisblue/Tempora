@@ -35,7 +35,6 @@ C:\Users\CODEBLUE\Documents\RPGGame\Tempora\obj\Debug\netcoreapp2.0\Tempora.pdb
 C:\Users\CODEBLUE\Documents\RPGGame\Tempora\bin\Debug\netcoreapp2.0\Content\cross.xnb
 C:\Users\CODEBLUE\Documents\RPGGame\Tempora\bin\Debug\netcoreapp2.0\Content\characters.xnb
 C:\Users\CODEBLUE\Documents\RPGGame\Tempora\bin\Debug\netcoreapp2.0\Content\dino.xnb
-C:\Users\CODEBLUE\Documents\Tempora\Tempora\obj\Debug\netcoreapp2.0\Tempora.csprojAssemblyReference.cache
 C:\Users\CODEBLUE\Documents\Tempora\Tempora\obj\Debug\netcoreapp2.0\Tempora.csproj.CoreCompileInputs.cache
 C:\Users\CODEBLUE\Documents\Tempora\Tempora\obj\Debug\netcoreapp2.0\Tempora.AssemblyInfoInputs.cache
 C:\Users\CODEBLUE\Documents\Tempora\Tempora\obj\Debug\netcoreapp2.0\Tempora.AssemblyInfo.cs
@@ -49,3 +48,4 @@ C:\Users\CODEBLUE\Documents\Tempora\Tempora\bin\Debug\netcoreapp2.0\Tempora.dll
 C:\Users\CODEBLUE\Documents\Tempora\Tempora\bin\Debug\netcoreapp2.0\Tempora.pdb
 C:\Users\CODEBLUE\Documents\Tempora\Tempora\obj\Debug\netcoreapp2.0\Tempora.dll
 C:\Users\CODEBLUE\Documents\Tempora\Tempora\obj\Debug\netcoreapp2.0\Tempora.pdb
+C:\Users\CODEBLUE\Documents\Tempora\Tempora\obj\Debug\netcoreapp2.0\Tempora.csprojAssemblyReference.cache
